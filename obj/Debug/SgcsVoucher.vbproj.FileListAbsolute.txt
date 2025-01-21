@@ -1,0 +1,27 @@
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\bin\SgcsVoucher.dll
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\bin\SgcsVoucher.pdb
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\bin\SgcsVoucher.xml
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.Resources.resources
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.vbproj.GenerateResource.Cache
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.dll
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.xml
+C:\Users\user1\Documents\Visual Studio 2008\Projects\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.pdb
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\bin\SgcsVoucher.dll
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\bin\SgcsVoucher.pdb
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\bin\SgcsVoucher.xml
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.Resources.resources
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.vbproj.GenerateResource.Cache
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.dll
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.xml
+C:\inetpub\wwwroot\SgcsVoucher\SgcsVoucher\obj\Debug\SgcsVoucher.pdb
+C:\inetpub\wwwroot\SgcsVoucher\bin\SgcsVoucher.dll
+C:\inetpub\wwwroot\SgcsVoucher\bin\SgcsVoucher.pdb
+C:\inetpub\wwwroot\SgcsVoucher\bin\SgcsVoucher.xml
+C:\inetpub\wwwroot\SgcsVoucher\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\SgcsVoucher\obj\Debug\SgcsVoucher.Resources.resources
+C:\inetpub\wwwroot\SgcsVoucher\obj\Debug\SgcsVoucher.vbproj.GenerateResource.Cache
+C:\inetpub\wwwroot\SgcsVoucher\obj\Debug\SgcsVoucher.dll
+C:\inetpub\wwwroot\SgcsVoucher\obj\Debug\SgcsVoucher.xml
+C:\inetpub\wwwroot\SgcsVoucher\obj\Debug\SgcsVoucher.pdb

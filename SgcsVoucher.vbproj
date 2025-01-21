@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18E502D4-3684-40B4-87EF-2CCD1F2AEFA3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SgcsVoucher</RootNamespace>
+    <AssemblyName>SgcsVoucher</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SgcsVoucher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SgcsVoucher.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="EntryCompany.aspx" />
+    <Content Include="EntryCustomer.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Menu\aaaa.gif" />
+    <Content Include="Menu\ACCEPT.jpg" />
+    <Content Include="Menu\add11.png" />
+    <Content Include="Menu\add11Ins.PNG" />
+    <Content Include="Menu\add12.png" />
+    <Content Include="Menu\add2.bmp" />
+    <Content Include="Menu\add2.png" />
+    <Content Include="Menu\add3.png" />
+    <Content Include="Menu\add4.png" />
+    <Content Include="Menu\airplain1.jpg" />
+    <Content Include="Menu\airplan2.jpg" />
+    <Content Include="Menu\AppAll.jpg" />
+    <Content Include="Menu\approve.jpg" />
+    <Content Include="Menu\ApprvalIcon.JPG" />
+    <Content Include="Menu\arrival.png" />
+    <Content Include="Menu\ArrowG.png" />
+    <Content Include="Menu\ArrowGreen1.png" />
+    <Content Include="Menu\ArrowR.png" />
+    <Content Include="Menu\ArrowRed1.png" />
+    <Content Include="Menu\AssetI.gif" />
+    <Content Include="Menu\Audit.gif" />
+    <Content Include="Menu\B7.jpg" />
+    <Content Include="Menu\bankDocs1.png" />
+    <Content Include="Menu\bankdocs2.png" />
+    <Content Include="Menu\bankdocs2Inv.PNG" />
+    <Content Include="Menu\bankdocs3.png" />
+    <Content Include="Menu\bankdocs3Inv.PNG" />
+    <Content Include="Menu\bankdocs4.png" />
+    <Content Include="Menu\bankdocs41.png" />
+    <Content Include="Menu\bankdocs4Inv.PNG" />
+    <Content Include="Menu\bankdocs5.png" />
+    <Content Include="Menu\BANN1.jpg" />
+    <Content Include="Menu\BANN2.jpg" />
+    <Content Include="Menu\BANNER.jpg" />
+    <Content Include="Menu\BANNER.psd.jpg" />
+    <Content Include="Menu\Bdf112.png" />
+    <Content Include="Menu\BulletArrow.gif" />
+    <Content Include="Menu\CA2FOB0T.jpg" />
+    <Content Include="Menu\CA45GRMD.jpg" />
+    <Content Include="Menu\CAABGX67.jpg" />
+    <Content Include="Menu\CACEMQ0D.jpg" />
+    <Content Include="Menu\Cal1.jpg" />
+    <Content Include="Menu\Cal2.jpg" />
+    <Content Include="Menu\Cal3.jpg" />
+    <Content Include="Menu\Cal4.jpg" />
+    <Content Include="Menu\CAN3HR35.jpg" />
+    <Content Include="Menu\CANL1BXR.jpg" />
+    <Content Include="Menu\Captain Logo.GIF" />
+    <Content Include="Menu\cargo-ship--v2.png" />
+    <Content Include="Menu\cargo-ship.png" />
+    <Content Include="Menu\cargo-ship1.png" />
+    <Content Include="Menu\cargo-ship2.png" />
+    <Content Include="Menu\change1.png" />
+    <Content Include="Menu\change2.png" />
+    <Content Include="Menu\change3.png" />
+    <Content Include="Menu\change4.png" />
+    <Content Include="Menu\cheque.jpg" />
+    <Content Include="Menu\co1.jfif" />
+    <Content Include="Menu\co2.jfif" />
+    <Content Include="Menu\comp1.jpg" />
+    <Content Include="Menu\comp2.png" />
+    <Content Include="Menu\comp2Inv.PNG" />
+    <Content Include="Menu\comp3.jpg" />
+    <Content Include="Menu\comp3Inv.JPG" />
+    <Content Include="Menu\complated.png" />
+    <Content Include="Menu\completed1.png" />
+    <Content Include="Menu\Copy of Empmaster1.jpg" />
+    <Content Include="Menu\Copy of pdf112.png" />
+    <Content Include="Menu\Copy of system.jpg" />
+    <Content Include="Menu\copy.png" />
+    <Content Include="Menu\copy1.png" />
+    <Content Include="Menu\copyInv.PNG" />
+    <Content Include="Menu\courier1.jpg" />
+    <Content Include="Menu\cus1.png" />
+    <Content Include="Menu\cus2.jfif" />
+    <Content Include="Menu\cus3.jfif" />
+    <Content Include="Menu\cus4.jfif" />
+    <Content Include="Menu\delete.jpg" />
+    <Content Include="Menu\Delivery.png" />
+    <Content Include="Menu\Delivery1.png" />
+    <Content Include="Menu\detuff-modified.png" />
+    <Content Include="Menu\detuff.png" />
+    <Content Include="Menu\DFOHead.png" />
+    <Content Include="Menu\dfologo.jpg" />
+    <Content Include="Menu\DFOlogo1.jpg" />
+    <Content Include="Menu\DFOlogo2.jpg" />
+    <Content Include="Menu\dfologo3.png" />
+    <Content Include="Menu\doddod.gif" />
+    <Content Include="Menu\downlode.jpg" />
+    <Content Include="Menu\dsisamsonlogo.png" />
+    <Content Include="Menu\dtg_cancel.gif" />
+    <Content Include="Menu\dtg_delete.gif" />
+    <Content Include="Menu\dtg_edit.gif" />
+    <Content Include="Menu\dtg_update.gif" />
+    <Content Include="Menu\dutypaid1.png" />
+    <Content Include="Menu\dutypaid2.png" />
+    <Content Include="Menu\dutypaid3.png" />
+    <Content Include="Menu\dutypaid3Inv.PNG" />
+    <Content Include="Menu\dutypaid4.png" />
+    <Content Include="Menu\dutypaid4Inv.PNG" />
+    <Content Include="Menu\email.jpg" />
+    <Content Include="Menu\Empmaster1.jpg" />
+    <Content Include="Menu\EmpMaster2.jpg" />
+    <Content Include="Menu\EmpMaster3.jpg" />
+    <Content Include="Menu\EmpMaster4.jpg" />
+    <Content Include="Menu\ezgif.com-optimize.gif" />
+    <Content Include="Menu\find.jpg" />
+    <Content Include="Menu\ftp.jpg" />
+    <Content Include="Menu\graf.jpg" />
+    <Content Include="Menu\GreenCircle.png" />
+    <Content Include="Menu\Heading1.jpg" />
+    <Content Include="Menu\HeadingBullet2.gif" />
+    <Content Include="Menu\history.jpg" />
+    <Content Include="Menu\home.jpg" />
+    <Content Include="Menu\Home1.jpg" />
+    <Content Include="Menu\icons8.png" />
+    <Content Include="Menu\icons81.png" />
+    <Content Include="Menu\icons8i.PNG" />
+    <Content Include="Menu\images %282%29.jfif" />
+    <Content Include="Menu\images %283%29.png" />
+    <Content Include="Menu\images.jpg" />
+    <Content Include="Menu\images1.jpg" />
+    <Content Include="Menu\images10.jpg" />
+    <Content Include="Menu\images11.jpg" />
+    <Content Include="Menu\images2.jpg" />
+    <Content Include="Menu\images4.jpg" />
+    <Content Include="Menu\images5.jpg" />
+    <Content Include="Menu\images7.jpg" />
+    <Content Include="Menu\images8.jpg" />
+    <Content Include="Menu\images9.jpg" />
+    <Content Include="Menu\informatio.jpg" />
+    <Content Include="Menu\ins1.png" />
+    <Content Include="Menu\ins2.jfif" />
+    <Content Include="Menu\ins2.png" />
+    <Content Include="Menu\ins4.png" />
+    <Content Include="Menu\ins5.png" />
+    <Content Include="Menu\ins6.jpg" />
+    <Content Include="Menu\ins7.jpg" />
+    <Content Include="Menu\Insert-Button.png" />
+    <Content Include="Menu\insert.png" />
+    <Content Include="Menu\INSORANCE.jpg" />
+    <Content Include="Menu\Insurance.jpg" />
+    <Content Include="Menu\insuranceIcon.jpg" />
+    <Content Include="Menu\Invoice.jfif" />
+    <Content Include="Menu\invoice1.png" />
+    <Content Include="Menu\invoice1Inv.PNG" />
+    <Content Include="Menu\Invoice2.jfif" />
+    <Content Include="Menu\invoice2.png" />
+    <Content Include="Menu\Invoice3.png" />
+    <Content Include="Menu\Invoice4.png" />
+    <Content Include="Menu\LicenIcon.JPG" />
+    <Content Include="Menu\LicenseIcon.JPG" />
+    <Content Include="Menu\lock1.jpg" />
+    <Content Include="Menu\LOGIN1.jpg" />
+    <Content Include="Menu\Logo.png" />
+    <Content Include="Menu\Man0060.xml" />
+    <Content Include="Menu\Man0063.xml" />
+    <Content Include="Menu\masthead1.gif" />
+    <Content Include="Menu\masthead2.gif" />
+    <Content Include="Menu\masthead3.gif" />
+    <Content Include="Menu\next-button.png" />
+    <Content Include="Menu\NextInvoice.png" />
+    <Content Include="Menu\NotApprove.jpg" />
+    <Content Include="Menu\OK.jpg" />
+    <Content Include="Menu\OK1.jpg" />
+    <Content Include="Menu\ourproduct.jpg" />
+    <Content Include="Menu\p1.jpg" />
+    <Content Include="Menu\p21.gif" />
+    <Content Include="Menu\pdf11.png" />
+    <Content Include="Menu\pdf112.png" />
+    <Content Include="Menu\pdf113.png" />
+    <Content Include="Menu\PDF114.png" />
+    <Content Include="Menu\PDFA.png" />
+    <Content Include="Menu\PdfNew.PNG" />
+    <Content Include="Menu\Pk1.jfif" />
+    <Content Include="Menu\pk2.png" />
+    <Content Include="Menu\pk3.png" />
+    <Content Include="Menu\pk4.jfif" />
+    <Content Include="Menu\pk5.png" />
+    <Content Include="Menu\plane.png" />
+    <Content Include="Menu\print.jpg" />
+    <Content Include="Menu\question1.jpg" />
+    <Content Include="Menu\question10.jpg" />
+    <Content Include="Menu\question11.jpg" />
+    <Content Include="Menu\question12.jpg" />
+    <Content Include="Menu\question13.jpg" />
+    <Content Include="Menu\question14.jpg" />
+    <Content Include="Menu\question15.jpg" />
+    <Content Include="Menu\question16 copy.jpg" />
+    <Content Include="Menu\question16.jpg" />
+    <Content Include="Menu\question17.JPG" />
+    <Content Include="Menu\question2.jpg" />
+    <Content Include="Menu\question3.jpg" />
+    <Content Include="Menu\question4.jpg" />
+    <Content Include="Menu\question5.jpg" />
+    <Content Include="Menu\question6.jpg" />
+    <Content Include="Menu\question7.jpg" />
+    <Content Include="Menu\question8.jpg" />
+    <Content Include="Menu\question9.jpg" />
+    <Content Include="Menu\R1.jpg" />
+    <Content Include="Menu\R2.gif" />
+    <Content Include="Menu\R3.jpg" />
+    <Content Include="Menu\red.png" />
+    <Content Include="Menu\RedCircle.png" />
+    <Content Include="Menu\RedCopy1.png" />
+    <Content Include="Menu\redInv.PNG" />
+    <Content Include="Menu\rep.jpg" />
+    <Content Include="Menu\rep1.jpg" />
+    <Content Include="Menu\RepairI.gif" />
+    <Content Include="Menu\Road.gif" />
+    <Content Include="Menu\rotate1.gif" />
+    <Content Include="Menu\rotate2.gif" />
+    <Content Include="Menu\rotate3.gif" />
+    <Content Include="Menu\rotate4.gif" />
+    <Content Include="Menu\rotate5.gif" />
+    <Content Include="Menu\rotate6.gif" />
+    <Content Include="Menu\s2.jpg" />
+    <Content Include="Menu\sale.jpg" />
+    <Content Include="Menu\samsonlinelogo.png" />
+    <Content Include="Menu\save1.png" />
+    <Content Include="Menu\save11.png" />
+    <Content Include="Menu\save11In.PNG" />
+    <Content Include="Menu\sea.png" />
+    <Content Include="Menu\serch.gif" />
+    <Content Include="Menu\serch.jpg" />
+    <Content Include="Menu\setup1.jpg" />
+    <Content Include="Menu\sgcs.gif" />
+    <Content Include="Menu\SgcsHead.png" />
+    <Content Include="Menu\SgcsLogo.png" />
+    <Content Include="Menu\ship1.png" />
+    <Content Include="Menu\ship1in.jpeg" />
+    <Content Include="Menu\Ship1inv.jpeg" />
+    <Content Include="Menu\ship1inv1.png" />
+    <Content Include="Menu\ShippingLogin.jpg" />
+    <Content Include="Menu\SibHead.png" />
+    <Content Include="Menu\siblogo.png" />
+    <Content Include="Menu\SibName.png" />
+    <Content Include="Menu\SORRY3.jpg" />
+    <Content Include="Menu\submit1.jpg" />
+    <Content Include="Menu\submit2.jpg" />
+    <Content Include="Menu\system.jpg" />
+    <Content Include="Menu\t1.jpg" />
+    <Content Include="Menu\Track-2.jpg" />
+    <Content Include="Menu\uploadpdf.JPG" />
+    <Content Include="Menu\V1.jpg" />
+    <Content Include="Menu\V2.jpg" />
+    <Content Include="Menu\V3.jpg" />
+    <Content Include="Menu\v5.jpg" />
+    <Content Include="Menu\vehicle1.gif" />
+    <Content Include="Menu\vehicle1.jpg" />
+    <Content Include="Menu\Vehicle11.gif" />
+    <Content Include="Menu\view.jpg" />
+    <Content Include="Menu\view1.jpg" />
+    <Content Include="Menu\VM1.jpg" />
+    <Content Include="Menu\VM2.jpg" />
+    <Content Include="Menu\VM3.jpg" />
+    <Content Include="Menu\Voucher.png" />
+    <Content Include="Menu\VR1.jpg" />
+    <Content Include="Menu\WAY.jpg" />
+    <Content Include="Menu\xml.png" />
+    <Content Include="NewShare.aspx" />
+    <Content Include="NewVoucher.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crystel\ChqCommercialdfo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChqCommercialdfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\ShaReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShaReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCus.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusHTL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusHTL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusLHP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusLHP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusSGC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusSGC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusSIB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusSIB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusSLP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusSLP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusSPL.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusSPL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\VouCusWHP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VouCusWHP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\WharfBillA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WharfBillA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\WharfBillAA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WharfBillAA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\WharfBillAA1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WharfBillAA1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\WharfBillAB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WharfBillAB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystel\WharfBillCC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WharfBillCC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryCompany.aspx.designer.vb">
+      <DependentUpon>EntryCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryCompany.aspx.vb">
+      <DependentUpon>EntryCompany.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EntryCustomer.aspx.designer.vb">
+      <DependentUpon>EntryCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntryCustomer.aspx.vb">
+      <DependentUpon>EntryCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewShare.aspx.designer.vb">
+      <DependentUpon>NewShare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewShare.aspx.vb">
+      <DependentUpon>NewShare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewVoucher.aspx.designer.vb">
+      <DependentUpon>NewVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewVoucher.aspx.vb">
+      <DependentUpon>NewVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Crystel\ChqCommercialdfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChqCommercialdfo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\ShaReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ShaReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCus.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusHTL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusHTL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusLHP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusLHP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusSGC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusSGC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusSIB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusSIB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusSLP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusSLP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusSPL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusSPL.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\VouCusWHP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VouCusWHP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\WharfBillA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WharfBillA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\WharfBillAA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WharfBillAA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\WharfBillAA1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WharfBillAA1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\WharfBillAB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WharfBillAB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystel\WharfBillCC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WharfBillCC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Menu\ezgif.com-gif-to-webp.webp" />
+    <None Include="Menu\Insurance" />
+    <None Include="Menu\question16.psd" />
+    <None Include="Menu\vehicle1.psd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

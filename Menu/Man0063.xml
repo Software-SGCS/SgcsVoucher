@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Awbolds>
+  <Master_bol>
+    <Customs_office_code>SECMB</Customs_office_code>
+    <Voyage_number>211W</Voyage_number>
+    <Date_of_departure>2023-04-26</Date_of_departure>
+    <Reference_number>RFCMAA23040049</Reference_number>
+  </Master_bol>
+  <Bol_segment>
+    <Bol_id>
+      <Bol_reference>RFCMAA23040049AB</Bol_reference>
+      <Line_number>1</Line_number>
+      <Bol_nature>23</Bol_nature>
+      <Bol_type_code>HSB</Bol_type_code>
+      <Master_bol_ref_number />
+      <Unique_carrier_reference>RELIANCE FREIGHT COLOMBO (PVT) LTD</Unique_carrier_reference>
+    </Bol_id>
+    <Consolidated_Cargo>0</Consolidated_Cargo>
+    <Load_unload_place>
+      <Place_of_loading_code>INMAA</Place_of_loading_code>
+      <Place_of_unloading_code>LKCMB</Place_of_unloading_code>
+    </Load_unload_place>
+    <Traders_segment>
+      <Carrier>
+        <Carrier_code>FF784</Carrier_code>
+        <Carrier_name>SAMSON LOGISTICS (PRIVATE) LIMITED</Carrier_name>
+        <Carrier_address>110,KUMARAN RATNAM ROAD COLOMBO 2</Carrier_address>
+      </Carrier>
+      <Exporter>
+        <Exporter_name>PUMA SPORTS INDIA PRIVATE LIMITED</Exporter_name>
+        <Exporter_address>GROUND FLOOR NO 496, NEXT TO HP SERVICE GATE MAHADEVAPURA MAIN ROAD BANGALORE - 560048 INDIA</Exporter_address>
+      </Exporter>
+      <Notify>
+        <Notify_code> </Notify_code>
+        <Notify_name>D. SAMSON AND SONS  (PVT) LTD</Notify_name>
+        <Notify_address>DSI SAMSON GROUP 110, KUMARAN RATNAM ROAD COLOMBO-02</Notify_address>
+      </Notify>
+      <Consignee>
+        <Consignee_code> </Consignee_code>
+        <Consignee_name>TO ORDER OF</Consignee_name>
+        <Consignee_address>HATTON NATIONAL BANK PLC</Consignee_address>
+      </Consignee>
+    </Traders_segment>
+    <ctn_segment>
+      <Ctn_reference>GCXU5625251</Ctn_reference>
+      <Number_of_packages>610</Number_of_packages>
+      <Type_of_container>40GP</Type_of_container>
+      <Empty_Full>01</Empty_Full>
+      <Marks1 />
+    </ctn_segment>
+    <Goods_segment>
+      <Number_of_packages>610</Number_of_packages>
+      <Package_type_code>PK</Package_type_code>
+      <Gross_mass>5159.42</Gross_mass>
+      <Shipping_marks>DSS/23/11 COLOMBO SRI LANKA AS PER THE B/L FCL/FCL</Shipping_marks>
+      <Goods_description>SAID TO CONTAIN 1 X 40 HC FCL CONTAINER CONTAINING TOTAL 610 PACKAGES SPORTS FOOTWEAR INVOICE 4414944725 DATE: 30.03.2023 AND 4414944726 DATE: 30.03.2023 SB NO: 9263741 AND 9256969 DATE: 13.04.2023 TOTAL NET.WT : 5147.20 FREIGHT COLLECT AS PER THE B/L FCL/FCL</Goods_description>
+      <Volume_in_cubic_meters>0</Volume_in_cubic_meters>
+      <Num_of_ctn_for_this_bol>1</Num_of_ctn_for_this_bol>
+      <Information />
+    </Goods_segment>
+    <Value_segment />
+  </Bol_segment>
+</Awbolds>

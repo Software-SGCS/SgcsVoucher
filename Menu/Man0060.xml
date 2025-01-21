@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Awbolds>
+  <Master_bol>
+    <Customs_office_code>SECMB</Customs_office_code>
+    <Voyage_number>113E</Voyage_number>
+    <Date_of_departure>2023-04-13</Date_of_departure>
+    <Reference_number>850153007575A</Reference_number>
+  </Master_bol>
+  <Bol_segment>
+    <Bol_id>
+      <Bol_reference>850153007575</Bol_reference>
+      <Line_number>1</Line_number>
+      <Bol_nature>23</Bol_nature>
+      <Bol_type_code>HSB</Bol_type_code>
+      <Master_bol_ref_number />
+      <Unique_carrier_reference>SEACARE FORWARDERS (PVT) LTD</Unique_carrier_reference>
+    </Bol_id>
+    <Consolidated_Cargo>1</Consolidated_Cargo>
+    <Load_unload_place>
+      <Place_of_loading_code>INNSA</Place_of_loading_code>
+      <Place_of_unloading_code>LKCMB</Place_of_unloading_code>
+    </Load_unload_place>
+    <Traders_segment>
+      <Carrier>
+        <Carrier_code>FF784</Carrier_code>
+        <Carrier_name>SAMSON LOGISTICS (PRIVATE) LIMITED</Carrier_name>
+        <Carrier_address>110,KUMARAN RATNAM ROAD COLOMBO 2</Carrier_address>
+      </Carrier>
+      <Exporter>
+        <Exporter_name>PAYAL POLYPLAST PVT.LTD</Exporter_name>
+        <Exporter_address>PLOT NO. E-24, NETAJI SUBHASH MARG DARYAGANJ NEW DELHI-110002 INDIA</Exporter_address>
+      </Exporter>
+      <Notify>
+        <Notify_code> </Notify_code>
+        <Notify_name>SAME AS CONSIGNEE</Notify_name>
+        <Notify_address>SAME AS CONSIGNEE</Notify_address>
+      </Notify>
+      <Consignee>
+        <Consignee_code> </Consignee_code>
+        <Consignee_name>D.SAMSON INDUSTRIES (PVT) LTD</Consignee_name>
+        <Consignee_address>P.O. BOX 46, D.SAMSON RAJAPAKSA MAWATHA BATADUWA GALLE</Consignee_address>
+      </Consignee>
+    </Traders_segment>
+    <ctn_segment>
+      <Ctn_reference>TLLU5705999</Ctn_reference>
+      <Number_of_packages>5</Number_of_packages>
+      <Type_of_container>40GP</Type_of_container>
+      <Empty_Full>02</Empty_Full>
+      <Marks1 />
+    </ctn_segment>
+    <Goods_segment>
+      <Number_of_packages>5</Number_of_packages>
+      <Package_type_code>PX</Package_type_code>
+      <Gross_mass>5100</Gross_mass>
+      <Shipping_marks>I2300138 COLOMBO SRI LANKA AS PER THE B/L LCL/LCL</Shipping_marks>
+      <Goods_description>5 PALLETS STC 200 BAG ONLY (FIVE PALLETS STC TWO HUNDRED BAGS ONLY) (200 BAG EACH OF 25 KGS NET WT PVC COMPOUND PP 81WT HS CODE NO: 39042200 INVOICE NO: PM/EXP/22-23/306 DATE 30.03.2023 GROSS WEIGHT : 5,100.00 KGS NET WEIGHT : 5,000.00 KGS AS PER THE B/L LCL/LCL</Goods_description>
+      <Volume_in_cubic_meters>8.893</Volume_in_cubic_meters>
+      <Num_of_ctn_for_this_bol>1</Num_of_ctn_for_this_bol>
+      <Information />
+    </Goods_segment>
+    <Value_segment />
+  </Bol_segment>
+</Awbolds>
